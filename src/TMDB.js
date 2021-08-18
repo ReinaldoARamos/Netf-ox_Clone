@@ -21,42 +21,48 @@ Cada informação desse generos vem da base, vai ser uma consulta diferente na A
 
 export default {
 getHomeList : async () => {
-    return[
+    return [
         {
-            slug: 'Originals';
+            slug: 'Originals',
             title: "Originais Netflix",
-            itens : []
+            items : []
         },
         {
             slug: 'trending',
             title: "Recomendados para você",
-            itens : []
+            items : []
         },
         {
             slug: 'top-rated',
             title: "Em Alta",
-            itens : []
+            items : []
         },
         {
-            slug: 'ação',
+            slug: 'action',
             title: "Ação",
-            itens : []
+            items : []
         },
         {
             slug: 'terror',
             title: "Terror",
-            itens : []
+            items : []
         },
         {
-            slug: 'comédia',
+            slug: 'comedy',
             title: "Comédia",
-            itens : []
+            items : []
         },
         {
             slug: 'romance',
             title: "Romance",
-            itens : []
+            items : []
         },
+        {
+            slug: 'documentary',
+            title: "Documentário",
+            items : []
+        },
+    
         
         
     ];
