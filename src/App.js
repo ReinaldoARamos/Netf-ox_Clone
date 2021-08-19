@@ -1,11 +1,6 @@
-import { div } from 'prelude-ls';
-import React from 'react';
+import React from "react";
+import Tbmd from "./TMDB";
 
 export default () => {
-return (
-  <div>
-    Uatiman
-  </div>
-)
-
-}
+  return <div>Uatiman</div>;
+};
