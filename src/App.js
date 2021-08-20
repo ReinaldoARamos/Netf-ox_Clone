@@ -4,6 +4,7 @@ import React, {
 } from "react";
 import Tbmd from "./TMDB";
 import MovieRow from "./components/MovieRow";
+import './App.css'
 
 export default () => {
   const [movielist, setMovieList] = useState([]); //Cpnst onde iremos setar os filmes
