@@ -35,7 +35,7 @@ export default {
         slug: "Originals",
         title: "Originais Netflix",
         items: await basicFetch(
-          `/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`
+          `/discover/tv?with_networks=213&language=pt-BR&api_key=${API_KEY}`
         ),
         //Desse jeito iremos filtar os filmes para oque queremos através desse req
         //Usamos o with network, que irá pegar o id dentro do banco de dados da API
