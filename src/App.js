@@ -3,7 +3,7 @@ import React, {
   useState /*Salva a lista de filmes que iremos exibir*/,
 } from "react";
 import Tbmd from "./TMDB";
-import movieRow from "./components/movieRow";
+import MovieRow from "./components/MovieRow";
 
 export default () => {
   const [movielist, setMovieList] = useState([]); //Cpnst onde iremos setar os filmes
@@ -20,7 +20,7 @@ export default () => {
     <div className="page">
       <section className="lists">
         {movielist.map((item, key) => (
-          <div>{item.title}</div>
+         <MovieRow />
         ))}
       </section>
     </div>
