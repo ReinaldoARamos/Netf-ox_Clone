@@ -5,6 +5,7 @@ import React, {
 import Tbmd from "./TMDB";
 import MovieRow from "./components/MovieRow";
 import './App.css'
+import FeaturedMovie from './components/featureMovie';
 
 export default () => {
   const [movielist, setMovieList] = useState([]); //Cpnst onde iremos setar os filmes
@@ -19,6 +20,8 @@ export default () => {
   }, []);
   return (
     <div className="page">
+
+      <FeaturedMovie />
       <section className="lists">
         {movielist.map((item, key) => (
          <MovieRow  key={key} title={item.title} items={item.items}/>

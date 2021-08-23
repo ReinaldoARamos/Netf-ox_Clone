@@ -29,6 +29,7 @@
 
 .movieRow--item {
   display: inline-block;
+  cursor: pointer;
   
   /*
     organiza todos os itens lado a lado em linha
