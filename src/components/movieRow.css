@@ -34,13 +34,16 @@
     organiza todos os itens lado a lado em linha
   */
 
-  width: 150px; /*Cada item de filme terá  um tamanho fixo de 150 pixels*/
+  width: 200px; /*Cada item de filme terá  um tamanho fixo de 150 pixels*/
 }
 
 .movieRow--item img{
     width: 100%; /*Dá a imagem 100% de sua área, desse jeito ela não fica achatada*/
+
     transform: scale(0.9); /*Deixa a imagem com 100% de sua área porém seu css fica apenas 90%, separando as imagens*/
+    transition: all ease 0.2s; /*Cria um efeito que deixa o aumento e diminuição da escala mais organico*/
 }
+
 
 .movieRow--item img:hover{
     transform: scale(1); /*Criamos esse escale para que quando passamos o mouse, ele saia de 90% e volte patra 100%
