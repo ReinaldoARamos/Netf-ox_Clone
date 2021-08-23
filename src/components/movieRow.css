@@ -12,8 +12,9 @@
 */
 }
 
-.movieRow--listaarea {
+.movieRow--listarea {
   overflow-x: hidden;
+  padding-left: 30px;
   /*
   TUdo que passa no eixo x é cortado
   */
@@ -28,6 +29,7 @@
 
 .movieRow--item {
   display: inline-block;
+  
   /*
     organiza todos os itens lado a lado em linha
   */
@@ -37,4 +39,10 @@
 
 .movieRow--item img{
     width: 100%; /*Dá a imagem 100% de sua área, desse jeito ela não fica achatada*/
+    transform: scale(0.9); /*Deixa a imagem com 100% de sua área porém seu css fica apenas 90%, separando as imagens*/
+}
+
+.movieRow--item img:hover{
+    transform: scale(1); /*Criamos esse escale para que quando passamos o mouse, ele saia de 90% e volte patra 100%
+    Dando a impressão de aumento, criando uma animação*/
 }
