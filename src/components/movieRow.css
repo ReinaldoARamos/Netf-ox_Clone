@@ -36,5 +36,5 @@
 }
 
 .movieRow--item img{
-    width: 100%;
+    width: 100%; /*Dá a imagem 100% de sua área, desse jeito ela não fica achatada*/
 }
