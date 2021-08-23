@@ -1,0 +1,40 @@
+.movieRow {
+  margin-bottom: 30px;
+  /*
+  Isso aqui vai colocar uma margem na div principal
+*/
+}
+
+.movieRow h2 {
+  margin: 0px 0px 0px 30px;
+  /*
+  Arruma a margem do h2, deixando mais para a esquerda
+*/
+}
+
+.movieRow--listaarea {
+  overflow-x: hidden;
+  /*
+  TUdo que passa no eixo x é cortado
+  */
+}
+
+.movieRow--list {
+  width: 9999999999px;
+    /*
+  Largura da lista
+*/
+}
+
+.movieRow--item {
+  display: inline-block;
+  /*
+    organiza todos os itens lado a lado em linha
+  */
+
+  width: 150px; /*Cada item de filme terá  um tamanho fixo de 150 pixels*/
+}
+
+.movieRow--item img{
+    width: 100%;
+}
