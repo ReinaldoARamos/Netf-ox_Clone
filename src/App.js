@@ -9,6 +9,7 @@ import FeaturedMovie from './components/featureMovie';
 
 export default () => {
   const [movielist, setMovieList] = useState([]); //Cpnst onde iremos setar os filmes
+  const  [featuredData, setFeaturedData] = useState(null);
   useEffect(() => {
     const loadAll = async () => {
       //Esse useEffect executa uma determinada função assim que a página é carregada
@@ -21,7 +22,7 @@ export default () => {
   return (
     <div className="page">
 
-      <FeaturedMovie />
+      <FeaturedMovie item={featuredData}/>
       <section className="lists">
         {movielist.map((item, key) => (
          <MovieRow  key={key} title={item.title} items={item.items}/>
