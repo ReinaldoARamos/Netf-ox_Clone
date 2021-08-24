@@ -28,7 +28,7 @@ export default () => {
       //|Esse choosen retorna o númmero aleatório junto com os dados em formato de OBj de dentro dos ORiginals
      let chosenInfo = await Tbmd.getMovieInfo(chosen.id, 'tv')
 
-     console.log(chosenInfo);
+     setFeaturedData (chosenInfo);
     };
     loadAll();
     return () => {};
