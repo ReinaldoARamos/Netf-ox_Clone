@@ -1,13 +1,14 @@
 import React from 'react';
-import './featuredMovie.css'
+import './FeaturedMovie.css'
 
 export default ({item}) =>  {
 return (
-    <section className= "featured">
+    <section className="featured">
     <div>
-        {item.originals_name}
-        </div>
-    </section>
+        {item.original_name}
+</div>
+</section>
+    
 );
 
 }
