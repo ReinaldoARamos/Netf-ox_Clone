@@ -92,4 +92,32 @@ export default {
       },
     ];
   },
+
+  getMovieInfo: async (movieId, type) => { //Aqui pegamos o movieId(tipo) e o type(que vai ser o genero)
+    let info = {}; //colocamos uma let vazia que vai receber infos
+    /*
+    Aqui tinhamos encontrado um problema, onde basicamente o obj retornado no random number não tinha o genero
+    do filme, por isso nós tiuvemos que criar essa função, que vai retornar essas informações para nós
+    */ 
+
+    if (movieId) { //criamos um if para que caso ele receba a id do filme ele crie um swich
+      switch(type){
+        case 'movie': //caso o id mostre ser uum filme, a informação que ele retorna da api é a seguinte
+        info = await basicFetch(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`); //Essa aqui, que pega o genero
+        break;
+        case 'tv': //Caso seja série, ele faz a mesma coisa, porém como série
+          info = await basicFetch(`/tv/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+          break;
+        default:
+          info=null;
+          break;
+      }
+    }
+    //Ele iguala a info e retorna no final
+    //Essa Id que ele retorna que indica ser série ou filme está na própria documentação oficial
+    //do The Movie DataBase
+  
+    return info;
+  }
+
 };

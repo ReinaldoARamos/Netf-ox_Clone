@@ -26,7 +26,9 @@ export default () => {
       //Se haver 20 filmes, ele retorna um valor aleatório entre 0 e 19, pois o array parte do 0
       let chosen = Originals[0].items.results[randomChosen];
       //|Esse choosen retorna o númmero aleatório junto com os dados em formato de OBj de dentro dos ORiginals
-      console.log(chosen);
+     let chosenInfo = await Tbmd.getMovieInfo(chosen.id, 'tv')
+
+     console.log(chosenInfo);
     };
     loadAll();
     return () => {};
