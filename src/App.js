@@ -11,6 +11,7 @@ import Header from "./components/Header";
 export default () => {
   const [movielist, setMovieList] = useState([]); //Cpnst onde iremos setar os filmes
   const [featuredData, setFeaturedData] = useState(null);
+  const [blackHeader, setBlackHeader] = useState(false);
   
   useEffect(() => {
     const loadAll = async () => {
@@ -30,7 +31,7 @@ export default () => {
   return (
     <div className="page">
 
-      <Header />
+      <Header  black={blackHeader}/>
     {featuredData &&  
     <FeaturedMovie item={featuredData }/>
     }
