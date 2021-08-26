@@ -55,6 +55,7 @@ export default () => {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+      <footer className= "footer">Feito usando o curso de React Native da B7WEb e APi The Movie Database</footer>
     </div>
   );
 };
