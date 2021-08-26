@@ -28,6 +28,20 @@ export default () => {
     };
     loadAll();
   }, []);
+
+  useEffect(() => { //criei um UseEffet
+    const scrollListener = () => { //Esse use effect se chama ScrollListener
+      if(window.scrollY > 10) { //Aqui eu coloquei um evento nativo com um if, de que caso o scroll Y seja movido um pouco, ele coloque true no BlackHeader
+        setBlackHeader(true);
+      } else {
+        setBlackHeader(false);
+      }
+    }
+    window.addEventListener('scroll', scrollListener) //Aqui eu coloquei o EventListener de Scroll pra executar o ScrollListener
+    return () => {
+      window.removeEventListener('scroll', scrollListener) //Quando o Scroll estiver menor que 10, ele remove o evento, setando o Scroll False, removendo o fundo
+    }
+  }, [])
   return (
     <div className="page">
 
