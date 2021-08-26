@@ -1,4 +1,4 @@
-.header{
+#head{
     position: fixed;
     z-index: 999;
     top: 0;
@@ -8,6 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left:  15px;
+    padding: 0 30px;
 }
 .header--logo img{
     height: 100%;
@@ -15,12 +17,22 @@
 
 }
 .header--logo {
-    height: 30px;
-    background-color: #111;
+    height: 25px;
+  
     
 
 }
+.black{
+    background-color: #141414;
+}
 
 .header--User{
+    height: 40px;
+ 
+}
 
+.header--User img{
+    height: 100%;
+    border-radius: 3px;
+   
 }
