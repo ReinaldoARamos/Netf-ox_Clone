@@ -6,6 +6,7 @@ import Tbmd from "./TMDB";
 import MovieRow from "./components/MovieRow";
 import "./App.css";
 import FeaturedMovie from "./components/FeaturedMovie"
+import Header from "./components/Header";
 
 export default () => {
   const [movielist, setMovieList] = useState([]); //Cpnst onde iremos setar os filmes
@@ -28,6 +29,8 @@ export default () => {
   }, []);
   return (
     <div className="page">
+
+      <Header />
     {featuredData &&  
     <FeaturedMovie item={featuredData }/>
     }
