@@ -50,3 +50,33 @@
     transform: scale(1); /*Criamos esse escale para que quando passamos o mouse, ele saia de 90% e volte patra 100%
     Dando a impressão de aumento, criando uma animação*/
 }
+
+.movieRow--right, .movieRow--left{
+  position: absolute;
+  width: 40px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  cursor: pointer;
+  opacity: 0;
+  transition: all ease 0.2s;
+}
+
+.movieRow--left{
+  left: 0;
+
+}
+
+.movieRow--right{
+right: 0;
+}
+
+.movieRow:hover .movieRow--left, 
+.movieRow .movieRow--right{
+opacity: 1;
+
+}
