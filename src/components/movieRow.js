@@ -24,8 +24,8 @@ export default ({ title, items }) => {
       <div className="movieRow--right" onClick={handleRightArrow}>
         <NavigateNext style={{ fontSize: 50 }} /> 
       </div>
-      <div className="movieRow--listarea" style={{marginLeft: scrollX, width: items.results.length * 150 }}>
-        <div className="movieRow--list">
+      <div className="movieRow--listarea" >
+        <div className="movieRow--list" style={{marginLeft: scrollX, width: items.results.length * 200 }}>
           {items.results.length > 0 &&
             items.results.map((item, key) => (
               <div key={key} className="movieRow--item">
