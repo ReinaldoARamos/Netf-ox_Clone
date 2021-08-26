@@ -20,12 +20,7 @@
   */
 }
 
-.movieRow--list {
-  width: 9999999999px;
-    /*
-  Largura da lista
-*/
-}
+
 
 .movieRow--item {
   display: inline-block;
