@@ -92,3 +92,10 @@ opacity: 1;
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 760px) {
+  .movieRow--right,
+  .movieRow--left{
+    opacity: 1;
+  }
+} 
