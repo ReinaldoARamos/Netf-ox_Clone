@@ -17,13 +17,13 @@ export default () => {
     const loadAll = async () => {
       
       let list = await Tbmd.getHomeList();
-      setMovieList(list);
+     // setMovieList(list);
 
       let originals = list.filter(i=>i.slug === "Originals");
       let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1 ));
       let chosen = originals[0].items.results[randomChosen];
       let chosenInfo = await Tbmd.getMovieInfo(chosen.id, 'tv');
-      setFeaturedData(chosenInfo);
+    //  setFeaturedData(chosenInfo);
       
     };
     loadAll();
@@ -56,7 +56,12 @@ export default () => {
         ))}
       </section>
       <footer className= "footer">Feito usando o curso de React Native da B7WEb e APi The Movie Database</footer>
+    <div className="loading">
+      <img src="https://cdn.lowgif.com/small/0534e2a412eeb281-the-counterintuitive-tech-behind-netflix-s-worldwide.gif" alt="loading" />
+
     </div>
+    </div>
+
   );
 };
 
