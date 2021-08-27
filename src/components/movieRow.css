@@ -40,6 +40,10 @@
     transition: all ease 0.2s; /*Cria um efeito que deixa o aumento e diminuição da escala mais organico*/
 }
 
+.movieRow--list {
+  transition: all ease 0.5s;
+}
+
 
 .movieRow--item img:hover{
     transform: scale(1); /*Criamos esse escale para que quando passamos o mouse, ele saia de 90% e volte patra 100%

@@ -7,12 +7,18 @@ export default ({ title, items }) => {
 
   const [scrollX, setScrollX] = useState(0);
   const handleLeftArrow = () => {
-
-
+    let x = scrollX + Math.round(window.innerWidth / 2); //Pega o valor do monitor do usuário e divide por 2
+    if(x>0){ //verificação de que caso o x for maior que 0, ele iguale o x a 0, impedindo de sair do limite
+      x=0
+    }
+setScrollX(x); //setamos o valor
   };
   const handleRightArrow = () => {
-
-
+    let x = scrollX - Math.round(window.innerWidth / 2); //
+    if(x>0){ //verificação de que caso o x for maior que 0, ele iguale o x a 0, impedindo de sair do limite
+      x=0
+    }
+setScrollX(x); //setamos o valor
   };
   return (
     <div className="movieRow">
